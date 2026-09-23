@@ -28,6 +28,7 @@ public class Minuman {
         
         System.out.println();
         
+        // sprite
         azizSprite sprite = new azizSprite("Sprite No sugar", "390 ml", "5.000", "Lemon-Lime", "Kaleng");
         
         
@@ -39,6 +40,18 @@ public class Minuman {
         
         System.out.println();
 
+        //fanta
+        hilmaFanta Fanta = new hilmaFanta("Fanta", "1 Liter", "10.000", "Strawberry", "Botol");
+        
+        
+        System.out.println("Nama     :" + Fanta.getNama());
+        System.out.println("Ukuran   :" + Fanta.getUkuran());
+        System.out.println("Harga    :Rp " + Fanta.getHarga());
+        System.out.println("Rasa     :" + Fanta.getRasa());
+        System.out.println("Kemasan  :" + Fanta.getKemasan());
+        
+        System.out.println();
+        
     }
     
 }

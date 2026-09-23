@@ -48,7 +48,7 @@ public class hilmaFanta {
         this.kemasan = kemasan;
     }
 
-        //getter
+    //getter
     public String getNama() {
         return nama;
     }
