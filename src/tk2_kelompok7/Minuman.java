@@ -27,6 +27,18 @@ public class Minuman {
         System.out.println("Kemasan  :" + cocacola.getKemasan());
         
         System.out.println();
+        
+        azizSprite sprite = new azizSprite("Sprite No sugar", "390 ml", "5.000", "Lemon-Lime", "Kaleng");
+        
+        
+        System.out.println("Nama     :" + sprite.getNama());
+        System.out.println("Ukuran   :" + sprite.getUkuran());
+        System.out.println("Harga    :Rp " + sprite.getHarga());
+        System.out.println("Rasa     :" + sprite.getRasa());
+        System.out.println("Kemasan  :" + sprite.getKemasan());
+        
+        System.out.println();
+
     }
     
 }
