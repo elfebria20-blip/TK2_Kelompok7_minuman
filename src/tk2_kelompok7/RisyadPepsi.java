@@ -24,7 +24,7 @@ public class RisyadPepsi {
     public void setNama(String nama) {
         this.nama = nama;
     }
-
+    //setter
     public void setUkuran(String ukuran) {
         this.ukuran = ukuran;
     }
