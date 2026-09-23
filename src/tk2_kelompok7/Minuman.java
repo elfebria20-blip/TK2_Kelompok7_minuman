@@ -52,6 +52,18 @@ public class Minuman {
         
         System.out.println();
         
+        //TEH PUCUK
+        Afiftehpucuk tehpucuk = new Afiftehpucuk("Teh Pucuk Harum", "450 mil", "5.000", "Teh Manis", "Botol");
+        
+        
+        System.out.println("Nama     :" + tehpucuk.getNama());
+        System.out.println("Ukuran   :" + tehpucuk.getUkuran());
+        System.out.println("Harga    :Rp " + tehpucuk.getHarga());
+        System.out.println("Rasa     :" + tehpucuk.getRasa());
+        System.out.println("Kemasan  :" + tehpucuk.getKemasan());
+        
+        System.out.println();
+        
     }
     
 }
