@@ -77,6 +77,20 @@ public class Minuman {
        
         
         System.out.println();
+        
+        //PEPSIIIIIII
+        
+        RisyadPepsi pepsi = new RisyadPepsi("Pepsi", "100 ml", "5.500", "Pepsi", "Botol");
+        
+        
+        System.out.println("Nama     :" + pepsi.getNama());
+        System.out.println("Ukuran   :" + pepsi.getUkuran());
+        System.out.println("Harga    :Rp " + pepsi.getHarga());
+        System.out.println("Rasa     :" + pepsi.getRasa());
+        System.out.println("Kemasan  :" + pepsi.getKemasan());
+        
+        System.out.println();
+        
     }
     
 }
