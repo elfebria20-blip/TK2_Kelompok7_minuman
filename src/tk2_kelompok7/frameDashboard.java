@@ -119,6 +119,7 @@ public class frameDashboard extends javax.swing.JFrame {
         bTehpucuk.setForeground(new java.awt.Color(255, 255, 255));
         bTehpucuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-drink-50.png"))); // NOI18N
         bTehpucuk.setText("Teh Pucuk");
+        bTehpucuk.addActionListener(this::bTehpucukActionPerformed);
 
         bGolda.setBackground(new java.awt.Color(153, 102, 0));
         bGolda.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
@@ -217,6 +218,13 @@ public class frameDashboard extends javax.swing.JFrame {
         frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_bGoldaActionPerformed
+
+    private void bTehpucukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTehpucukActionPerformed
+        // TODO add your handling code here:
+        frameTehPucuk frame = new frameTehPucuk();
+        frame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_bTehpucukActionPerformed
 
     /**
      * @param args the command line arguments

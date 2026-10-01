@@ -217,6 +217,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Teh Pucuk"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bTehpucukActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="bGolda">
           <Properties>
