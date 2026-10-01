@@ -16,6 +16,14 @@ public class Afiftehpucuk {
     private String rasa;
     private String kemasan;
     
+    public Afiftehpucuk(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
+    
     //CONTRUKTOR
     public Afiftehpucuk(String nama, String ukuran, String harga, String rasa, String kemasan) {
         this.nama = nama;
