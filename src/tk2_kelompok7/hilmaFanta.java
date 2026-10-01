@@ -16,7 +16,15 @@ public class hilmaFanta {
     private String harga;
     private String rasa;
     private String kemasan;
-
+    
+    public hilmaFanta(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
+    
     //constructor
     public hilmaFanta(String nama, String ukuran, String harga, String rasa, String kemasan) {
         this.nama = nama;
