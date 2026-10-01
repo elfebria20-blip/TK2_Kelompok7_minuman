@@ -133,6 +133,7 @@ public class frameDashboard extends javax.swing.JFrame {
         bSprite.setForeground(new java.awt.Color(255, 255, 255));
         bSprite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50 (1).png"))); // NOI18N
         bSprite.setText("Sprite");
+        bSprite.addActionListener(this::bSpriteActionPerformed);
 
         bPepsi.setBackground(new java.awt.Color(0, 204, 255));
         bPepsi.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
@@ -225,6 +226,13 @@ public class frameDashboard extends javax.swing.JFrame {
         frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_bTehpucukActionPerformed
+
+    private void bSpriteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSpriteActionPerformed
+        // TODO add your handling code here:
+         FrameSprite frame = new FrameSprite();
+        frame.setVisible(true);
+        dispose();    
+    }//GEN-LAST:event_bSpriteActionPerformed
 
     /**
      * @param args the command line arguments
