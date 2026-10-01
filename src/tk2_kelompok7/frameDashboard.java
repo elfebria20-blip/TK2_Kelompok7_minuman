@@ -34,7 +34,6 @@ public class frameDashboard extends javax.swing.JFrame {
 
         panelSidebar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         bBack = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         panelContent = new javax.swing.JPanel();
@@ -53,10 +52,6 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText(" Dashboard ");
-
-        jLabel2.setFont(new java.awt.Font("Hiragino Mincho ProN", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel2.setText("Minuman");
 
         bBack.setBackground(new java.awt.Color(153, 153, 153));
         bBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -84,8 +79,6 @@ public class frameDashboard extends javax.swing.JFrame {
                         .addContainerGap(163, Short.MAX_VALUE))
                     .addGroup(panelSidebarLayout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(bBack)
                         .addGap(15, 15, 15))))
@@ -95,10 +88,9 @@ public class frameDashboard extends javax.swing.JFrame {
             .addGroup(panelSidebarLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(panelSidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bBack))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(jLabel4)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
@@ -114,34 +106,34 @@ public class frameDashboard extends javax.swing.JFrame {
         bCocacola.setText("Coca-Cola");
         bCocacola.addActionListener(this::bCocacolaActionPerformed);
 
-        bTehpucuk.setBackground(new java.awt.Color(231, 161, 90));
+        bTehpucuk.setBackground(new java.awt.Color(153, 0, 0));
         bTehpucuk.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
         bTehpucuk.setForeground(new java.awt.Color(255, 255, 255));
         bTehpucuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-drink-50.png"))); // NOI18N
         bTehpucuk.setText("Teh Pucuk");
         bTehpucuk.addActionListener(this::bTehpucukActionPerformed);
 
-        bGolda.setBackground(new java.awt.Color(153, 102, 0));
+        bGolda.setBackground(new java.awt.Color(153, 0, 0));
         bGolda.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
         bGolda.setForeground(new java.awt.Color(255, 255, 255));
         bGolda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-coffee-to-go-50.png"))); // NOI18N
         bGolda.setText("Golda Coffe");
         bGolda.addActionListener(this::bGoldaActionPerformed);
 
-        bSprite.setBackground(new java.awt.Color(102, 204, 0));
+        bSprite.setBackground(new java.awt.Color(153, 0, 0));
         bSprite.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
         bSprite.setForeground(new java.awt.Color(255, 255, 255));
         bSprite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50 (1).png"))); // NOI18N
         bSprite.setText("Sprite");
         bSprite.addActionListener(this::bSpriteActionPerformed);
 
-        bPepsi.setBackground(new java.awt.Color(0, 204, 255));
+        bPepsi.setBackground(new java.awt.Color(153, 0, 0));
         bPepsi.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
         bPepsi.setForeground(new java.awt.Color(255, 255, 255));
         bPepsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50 (2).png"))); // NOI18N
         bPepsi.setText("Pepsi");
 
-        bFanta.setBackground(new java.awt.Color(204, 102, 0));
+        bFanta.setBackground(new java.awt.Color(153, 0, 0));
         bFanta.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
         bFanta.setForeground(new java.awt.Color(255, 255, 255));
         bFanta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50.png"))); // NOI18N
@@ -176,7 +168,7 @@ public class frameDashboard extends javax.swing.JFrame {
                 .addGroup(panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bGolda, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                     .addComponent(bPepsi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bSprite, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
                     .addComponent(bFanta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -267,7 +259,6 @@ public class frameDashboard extends javax.swing.JFrame {
     private javax.swing.JButton bSprite;
     private javax.swing.JButton bTehpucuk;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel panelContent;
     private javax.swing.JPanel panelSidebar;
