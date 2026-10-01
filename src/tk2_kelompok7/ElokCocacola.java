@@ -2,8 +2,7 @@
 package tk2_kelompok7;
 
 
-public class ElokCocacola {
-    
+public class ElokCocacola {    
     //atribut
     private String nama;
     private String ukuran;
@@ -11,6 +10,14 @@ public class ElokCocacola {
     private String rasa;
     private String kemasan;
     
+    public ElokCocacola(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
+
     //constructor
     public ElokCocacola(String nama, String ukuran, String harga, String rasa, String kemasan) {
         this.nama = nama;
