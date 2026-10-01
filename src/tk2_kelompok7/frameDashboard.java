@@ -125,6 +125,7 @@ public class frameDashboard extends javax.swing.JFrame {
         bGolda.setForeground(new java.awt.Color(255, 255, 255));
         bGolda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-coffee-to-go-50.png"))); // NOI18N
         bGolda.setText("Golda Coffe");
+        bGolda.addActionListener(this::bGoldaActionPerformed);
 
         bSprite.setBackground(new java.awt.Color(102, 204, 0));
         bSprite.setFont(new java.awt.Font("Libian SC", 1, 24)); // NOI18N
@@ -209,6 +210,13 @@ public class frameDashboard extends javax.swing.JFrame {
         frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_bFantaActionPerformed
+
+    private void bGoldaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bGoldaActionPerformed
+        // TODO add your handling code here:
+        frameGoldacoffee frame = new frameGoldacoffee();
+        frame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_bGoldaActionPerformed
 
     /**
      * @param args the command line arguments
