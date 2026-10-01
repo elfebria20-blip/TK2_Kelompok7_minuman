@@ -143,6 +143,7 @@ public class frameDashboard extends javax.swing.JFrame {
         bFanta.setForeground(new java.awt.Color(255, 255, 255));
         bFanta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50.png"))); // NOI18N
         bFanta.setText("Fanta");
+        bFanta.addActionListener(this::bFantaActionPerformed);
 
         javax.swing.GroupLayout panelContentLayout = new javax.swing.GroupLayout(panelContent);
         panelContent.setLayout(panelContentLayout);
@@ -201,6 +202,13 @@ public class frameDashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_bBackMouseClicked
+
+    private void bFantaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFantaActionPerformed
+        // TODO add your handling code here:
+         frameFanta frame = new frameFanta();
+        frame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_bFantaActionPerformed
 
     /**
      * @param args the command line arguments
