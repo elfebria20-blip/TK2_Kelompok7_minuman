@@ -17,6 +17,13 @@ public class azizSprite {
     private String rasa;
     private String kemasan;
     
+    public azizSprite(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
     //Constructor
     public azizSprite(String nama, String ukuran, String harga, String rasa, String kemasan) {
         this.nama = nama;
