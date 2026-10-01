@@ -11,6 +11,14 @@ public class RisyadPepsi {
     private String rasa;
     private String kemasan;
     
+    public RisyadPepsi(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
+    
     //construktor
     public RisyadPepsi(String nama, String ukuran, String harga, String rasa, String kemasan) {
         this.nama = nama;
