@@ -16,6 +16,14 @@ public class jaanGoldaCoffee {
     private String harga;
     private String rasa;
     private String kemasan;
+    
+    public jaanGoldaCoffee(){
+        nama = "";
+        ukuran = "";
+        harga = "";
+        rasa = "";
+        kemasan = "";
+    }
 
     //Constructor
     public jaanGoldaCoffee(String nama, String ukuran, String harga, String rasa, String kemasan) {
