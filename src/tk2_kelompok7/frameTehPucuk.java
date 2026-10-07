@@ -78,13 +78,10 @@ public class frameTehPucuk extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel3.setBackground(new java.awt.Color(230, 202, 173));
-
         jLabel1.setFont(new java.awt.Font("Kokonor", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("TEH PUCUK");
 
-        jPanel2.setBackground(new java.awt.Color(233, 220, 179));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Input"));
 
         tNama.addActionListener(this::tNamaActionPerformed);
@@ -176,7 +173,6 @@ public class frameTehPucuk extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(233, 220, 179));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Output"));
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
