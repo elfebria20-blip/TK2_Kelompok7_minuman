@@ -55,12 +55,12 @@ public class frameDashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        panelSidebar.setBackground(new java.awt.Color(230, 202, 173));
+        panelSidebar.setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText(" Dashboard ");
 
-        bBack.setBackground(new java.awt.Color(230, 202, 173));
         bBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-close-20 (2).png"))); // NOI18N
         bBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -69,10 +69,11 @@ public class frameDashboard extends javax.swing.JFrame {
         });
         bBack.addActionListener(this::bBackActionPerformed);
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Menu Navigasi From Mahasiswa | Pemrograman Berorientasi Objek | Kelompok 7");
 
         jLabel2.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Minuman");
         jLabel2.setPreferredSize(new java.awt.Dimension(139, 25));
 
@@ -111,48 +112,34 @@ public class frameDashboard extends javax.swing.JFrame {
 
         getContentPane().add(panelSidebar, java.awt.BorderLayout.PAGE_START);
 
-        panelContent.setBackground(new java.awt.Color(233, 220, 179));
-
-        bCocacola.setBackground(new java.awt.Color(230, 202, 173));
-        bCocacola.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bCocacola.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bCocacola.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-coca-cola-50.png"))); // NOI18N
         bCocacola.setText("Coca-Cola");
-        bCocacola.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bCocacola.addActionListener(this::bCocacolaActionPerformed);
 
-        bTehpucuk.setBackground(new java.awt.Color(230, 202, 173));
-        bTehpucuk.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bTehpucuk.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bTehpucuk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-drink-50.png"))); // NOI18N
         bTehpucuk.setText("Teh Pucuk");
-        bTehpucuk.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bTehpucuk.addActionListener(this::bTehpucukActionPerformed);
 
-        bGolda.setBackground(new java.awt.Color(230, 202, 173));
-        bGolda.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bGolda.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bGolda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-coffee-to-go-50.png"))); // NOI18N
         bGolda.setText("Golda Coffe");
-        bGolda.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bGolda.addActionListener(this::bGoldaActionPerformed);
 
-        bSprite.setBackground(new java.awt.Color(230, 202, 173));
-        bSprite.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bSprite.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bSprite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50 (1).png"))); // NOI18N
         bSprite.setText("Sprite");
-        bSprite.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bSprite.addActionListener(this::bSpriteActionPerformed);
 
-        bPepsi.setBackground(new java.awt.Color(230, 202, 173));
-        bPepsi.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bPepsi.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bPepsi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50 (2).png"))); // NOI18N
         bPepsi.setText("Pepsi");
-        bPepsi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bPepsi.addActionListener(this::bPepsiActionPerformed);
 
-        bFanta.setBackground(new java.awt.Color(230, 202, 173));
-        bFanta.setFont(new java.awt.Font("Kokonor", 1, 24)); // NOI18N
+        bFanta.setFont(new java.awt.Font("Al Nile", 1, 24)); // NOI18N
         bFanta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_kelompok7/icon/icons8-can-50.png"))); // NOI18N
         bFanta.setText("Fanta");
-        bFanta.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         bFanta.addActionListener(this::bFantaActionPerformed);
 
         jLabel3.setFont(new java.awt.Font("Hiragino Mincho ProN", 0, 12)); // NOI18N
