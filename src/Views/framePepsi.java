@@ -83,7 +83,6 @@ public class framePepsi extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Pepsi");
 
-        jPanel2.setBackground(new java.awt.Color(233, 220, 179));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Input"));
 
         tNama.addActionListener(this::tNamaActionPerformed);
@@ -175,7 +174,6 @@ public class framePepsi extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(233, 220, 179));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Output"));
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
