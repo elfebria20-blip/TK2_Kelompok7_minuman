@@ -14,7 +14,7 @@ import Moduls.ElokCocacola;
  * @author macproi52019
  */
 public class frameCocacola extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameCocacola.class.getName());
 
     /**
@@ -22,21 +22,23 @@ public class frameCocacola extends javax.swing.JFrame {
      */
     public frameCocacola() {
         initComponents();
-        
+
         reset();
     }
-    
-    void reset(){
+
+    void reset() {
         tNama.setText(null);
         tUkuran.setText(null);
         tHarga.setText(null);
         tRasa.setText(null);
         tKemasan.setText(null);
+        tKadar.setText(null);
         cNama.setText(null);
         cUkuran.setText(null);
         cHarga.setText(null);
         cRasa.setText(null);
         cKemasan.setText(null);
+        cKadar.setText(null);
     }
 
     /**
@@ -61,6 +63,8 @@ public class frameCocacola extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        tKadar = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
         bSimpan = new javax.swing.JButton();
         bReset = new javax.swing.JButton();
         tBack = new javax.swing.JLabel();
@@ -75,6 +79,8 @@ public class frameCocacola extends javax.swing.JFrame {
         cHarga = new javax.swing.JLabel();
         cRasa = new javax.swing.JLabel();
         cKemasan = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        cKadar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -108,6 +114,11 @@ public class frameCocacola extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel2.setText("Nama           :");
 
+        tKadar.addActionListener(this::tKadarActionPerformed);
+
+        jLabel12.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel12.setText("Kadar Koka :");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -119,14 +130,16 @@ public class frameCocacola extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tUkuran, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tNama, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tHarga, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tRasa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tKemasan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tKemasan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tKadar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23))
         );
         jPanel2Layout.setVerticalGroup(
@@ -152,7 +165,11 @@ public class frameCocacola extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tKemasan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tKadar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         bSimpan.setBackground(new java.awt.Color(0, 153, 0));
@@ -191,6 +208,11 @@ public class frameCocacola extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel11.setText("Kemasan  :");
 
+        jLabel13.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel13.setText("Kadar Koka :");
+
+        cKadar.setText("h");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -204,21 +226,24 @@ public class frameCocacola extends javax.swing.JFrame {
                         .addComponent(cNama, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel11))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(24, 24, 24)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel8)
                                     .addComponent(jLabel9)
-                                    .addComponent(jLabel10))))
+                                    .addComponent(jLabel10)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING))))
                         .addGap(81, 81, 81)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cUkuran, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cRasa, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cKemasan, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(cKemasan, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cKadar, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -244,7 +269,11 @@ public class frameCocacola extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cKemasan)
                     .addComponent(jLabel11))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(cKadar))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -278,7 +307,7 @@ public class frameCocacola extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(38, 38, 38)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bSimpan)
                     .addComponent(bReset))
@@ -315,7 +344,7 @@ public class frameCocacola extends javax.swing.JFrame {
         new frameDashboard().setVisible(true);
         dispose();
 
-        
+
     }//GEN-LAST:event_tBackMouseClicked
 
     private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
@@ -332,12 +361,14 @@ public class frameCocacola extends javax.swing.JFrame {
         minuman.setHarga(tHarga.getText());
         minuman.setRasa(tRasa.getText());
         minuman.setKemasan(tKemasan.getText());
+        minuman.setDaunkadarkoka(tKadar.getText());
 
         cNama.setText(minuman.getNama());
         cUkuran.setText(minuman.getUkuran());
         cHarga.setText(minuman.getHarga());
         cRasa.setText(minuman.getRasa());
         cKemasan.setText(minuman.getKemasan());
+        cKadar.setText(minuman.getKadardaunkoka());
     }//GEN-LAST:event_bSimpanActionPerformed
 
     private void tRasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tRasaActionPerformed
@@ -348,6 +379,10 @@ public class frameCocacola extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tKemasanActionPerformed
 
+    private void tKadarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tKadarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tKadarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -357,8 +392,8 @@ public class frameCocacola extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        
-         try {
+
+        try {
             UIManager.put("Button.arc", 15);
             UIManager.put("TextComponent.arc", 15);
             UIManager.put("Button.borderWidth", 0);
@@ -377,6 +412,7 @@ public class frameCocacola extends javax.swing.JFrame {
     private javax.swing.JButton bReset;
     private javax.swing.JButton bSimpan;
     private javax.swing.JLabel cHarga;
+    private javax.swing.JLabel cKadar;
     private javax.swing.JLabel cKemasan;
     private javax.swing.JLabel cNama;
     private javax.swing.JLabel cRasa;
@@ -384,6 +420,8 @@ public class frameCocacola extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -397,6 +435,7 @@ public class frameCocacola extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel tBack;
     private javax.swing.JTextField tHarga;
+    private javax.swing.JTextField tKadar;
     private javax.swing.JTextField tKemasan;
     private javax.swing.JTextField tNama;
     private javax.swing.JTextField tRasa;
