@@ -44,7 +44,7 @@ public class MainMinuman {
         System.out.println();
         
         // Sprite
-       AzizSprite sprite = new AzizSprite("sprite", "Sedang", "5.000", "Lemon", "Botol", "0.001%");
+        AzizSprite sprite = new AzizSprite("sprite", "Sedang", "5.000", "Lemon", "Botol", "0.001%");
         
         
         System.out.println("Nama     :" + sprite.getNama());
@@ -53,6 +53,19 @@ public class MainMinuman {
         System.out.println("Rasa     :" + sprite.getRasa());
         System.out.println("Kemasan  :" + sprite.getKemasan());
         System.out.println("Minyak Jeruk Nipis  :" + sprite.getMinyakjeruknipis());
+        
+        System.out.println();
+        
+        // teh pucuk
+        AfifTehpucuk tehpucuk = new AfifTehpucuk("Teh Pucuk", "Sedang", "3.000", "Jasmine", "Botol", "0.5%");
+        
+        
+        System.out.println("Nama     :" + tehpucuk.getNama());
+        System.out.println("Ukuran   :" + tehpucuk.getUkuran());
+        System.out.println("Harga    :Rp " + tehpucuk.getHarga());
+        System.out.println("Rasa     :" + tehpucuk.getRasa());
+        System.out.println("Kemasan  :" + tehpucuk.getKemasan());
+        System.out.println("Ekstrak Teh  :" + tehpucuk.getEkstraktehmelati());
         
         System.out.println();
        
