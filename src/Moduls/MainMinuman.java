@@ -68,6 +68,19 @@ public class MainMinuman {
         System.out.println("Ekstrak Teh  :" + tehpucuk.getEkstraktehmelati());
         
         System.out.println();
+        
+        // Pepsi
+        RisyadPepsi pepsi = new RisyadPepsi("Pepsi", "Sedang", "10.000", "Pepsi", "Kaleng", "0.1%");
+        
+        
+        System.out.println("Nama     :" + pepsi.getNama());
+        System.out.println("Ukuran   :" + pepsi.getUkuran());
+        System.out.println("Harga    :Rp " + pepsi.getHarga());
+        System.out.println("Rasa     :" + pepsi.getRasa());
+        System.out.println("Kemasan  :" + pepsi.getKemasan());
+        System.out.println("Buah Sitrus  :" + pepsi.getBuahsitrus());
+        
+        System.out.println();
        
     }
     
