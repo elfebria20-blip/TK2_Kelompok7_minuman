@@ -42,6 +42,19 @@ public class MainMinuman {
         System.out.println("Kadar kopi  :" + goldacoffe.getKadarkopi());
         
         System.out.println();
+        
+        // Sprite
+       AzizSprite sprite = new AzizSprite("sprite", "Sedang", "5.000", "Lemon", "Botol", "0.001%");
+        
+        
+        System.out.println("Nama     :" + sprite.getNama());
+        System.out.println("Ukuran   :" + sprite.getUkuran());
+        System.out.println("Harga    :Rp " + sprite.getHarga());
+        System.out.println("Rasa     :" + sprite.getRasa());
+        System.out.println("Kemasan  :" + sprite.getKemasan());
+        System.out.println("Minyak Jeruk Nipis  :" + sprite.getMinyakjeruknipis());
+        
+        System.out.println();
        
     }
     
