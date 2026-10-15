@@ -29,6 +29,19 @@ public class MainMinuman {
         
         System.out.println();
         
+        
+        // Golda coffe
+        JaanGoldacoffe goldacoffe = new JaanGoldacoffe("goldacoffe", "kecil", "4.500", "golda", "Botol", "65%");
+        
+        
+        System.out.println("Nama     :" + goldacoffe.getNama());
+        System.out.println("Ukuran   :" + goldacoffe.getUkuran());
+        System.out.println("Harga    :Rp " + goldacoffe.getHarga());
+        System.out.println("Rasa     :" + goldacoffe.getRasa());
+        System.out.println("Kemasan  :" + goldacoffe.getKemasan());
+        System.out.println("Kadar kopi  :" + goldacoffe.getKadarkopi());
+        
+        System.out.println();
        
     }
     
