@@ -81,6 +81,19 @@ public class MainMinuman {
         System.out.println("Buah Sitrus  :" + pepsi.getBuahsitrus());
         
         System.out.println();
+        
+        // Fanta
+        hilmaFanta Fanta = new hilmaFanta("Fanta", "Sedang", "7.000", "Strawberry", "Botol", "0.005%");
+        
+        
+        System.out.println("Nama     :" + Fanta.getNama());
+        System.out.println("Ukuran   :" + Fanta.getUkuran());
+        System.out.println("Harga    :Rp " + Fanta.getHarga());
+        System.out.println("Rasa     :" + Fanta.getRasa());
+        System.out.println("Kemasan  :" + Fanta.getKemasan());
+        System.out.println("Bubuk strawberry :" + Fanta.getBubukstrawberry());
+        
+        System.out.println();
        
     }
     
