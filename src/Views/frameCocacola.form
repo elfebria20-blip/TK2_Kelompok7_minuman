@@ -301,40 +301,37 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" pref="84" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" min="-2" pref="84" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+                                      <Component id="jLabel10" alignment="1" min="-2" pref="84" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" alignment="1" min="-2" pref="84" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                              <Component id="cNama" min="-2" pref="194" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="cUkuran" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="cHarga" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="cRasa" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="cKemasan" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="cKadar" min="-2" pref="194" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="cUkuran" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <Component id="cHarga" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <Component id="cRasa" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <Component id="cKemasan" min="-2" pref="194" max="-2" attributes="0"/>
-                                  <Component id="cKadar" min="-2" pref="194" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="cNama" alignment="1" min="-2" pref="194" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="41" max="32767" attributes="0"/>
                   </Group>
@@ -384,7 +381,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Helvetica Neue" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Nama       :"/>
+                <Property name="text" type="java.lang.String" value="Nama          :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel8">
@@ -392,7 +389,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Helvetica Neue" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Ukuran     :"/>
+                <Property name="text" type="java.lang.String" value="Ukuran        :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
@@ -400,7 +397,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Helvetica Neue" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Harga       :"/>
+                <Property name="text" type="java.lang.String" value="Harga          :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
@@ -408,7 +405,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Helvetica Neue" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Rasa        :"/>
+                <Property name="text" type="java.lang.String" value="Rasa           :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
@@ -416,7 +413,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Helvetica Neue" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Kemasan  :"/>
+                <Property name="text" type="java.lang.String" value="Kemasan     :"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="cNama">

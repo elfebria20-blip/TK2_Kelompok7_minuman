@@ -26,8 +26,8 @@ public class ElokCocacola extends Minuman {
     }
 
  
-    public void setDaunkadarkoka(String daunkadarkoka) {
-        this. kadardaunkoka= daunkadarkoka;
+    public void setKadardaunkoka(String kadardaunkoka) {
+        this. kadardaunkoka= kadardaunkoka;
     }
 
     
